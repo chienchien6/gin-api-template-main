@@ -27,4 +27,5 @@ func InitRedis() {
 		panic("redis初始化失败! " + err.Error())
 	}
 	global.GvaRedis = redisClient
+
 }

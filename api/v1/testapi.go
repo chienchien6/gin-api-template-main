@@ -147,7 +147,6 @@ func ExpireGet(c *gin.Context) {
 	//key := c.Param("key")
 	key := c.Query("key")
 
-	//redisService := service.RedisService{} //這樣僅是空得結構體
 	redisService := service.NewRedisService(global.GvaConfig.Redis.Addr)
 
 	value, err := redisService.Get(key)

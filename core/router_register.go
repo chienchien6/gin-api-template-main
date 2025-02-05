@@ -21,4 +21,7 @@ func RegisterRouters(engine *gin.Engine) {
 	router.InitTestRouter(engine)
 	// 注册es路由
 	router.InitESRouter(engine)
+
+	//Lottery Game
+	router.InitGameRouter(engine)
 }

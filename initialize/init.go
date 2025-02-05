@@ -19,6 +19,7 @@ func InitConfig() {
 	InitRedis()
 	// 初始化es
 	InitES()
+
 }
 
 // 程序退出前释放资源
